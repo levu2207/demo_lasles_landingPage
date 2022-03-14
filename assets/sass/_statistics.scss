@@ -1,0 +1,64 @@
+// start statistics
+.statistics {
+    margin-top: 103px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 37.5px 91px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 25px 0 #ccc;
+
+    &-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    &-separate {
+        height: 125px;
+        width: 0;
+        border: 1px solid #EEEFF2;
+    }
+
+    &-icon {
+        margin-right: 36.5px;
+    }
+
+    &-heading {
+        color: $heading-color;
+        font-size: 2.5rem;
+        font-weight: 700;
+        line-height: 1.2;
+        margin-bottom: 5px;
+    }
+
+    &-desc {
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+}
+// start responsive
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+// mobile
+@media (max-width: 739px) {
+.statistics {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 350px;
+    &-separate {
+        display: none;
+    }
+    &-item + .statistics-item {
+        margin-bottom: 40px;
+    }
+}
+}
+// end responsive
+// end statistics

@@ -1,0 +1,22 @@
+// start header
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    position: relative;
+    &-auth {
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+    &-signup {
+        color: $primary-color;
+        padding: 13px 45px;
+        border: 1px solid #F53855;
+        border-radius: 50px;
+    }
+    &-signin {
+        color: $heading-color;
+        margin-right: 30px;
+    }
+}

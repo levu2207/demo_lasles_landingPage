@@ -1,0 +1,55 @@
+// begin subscribe
+.subscribe {
+    margin-top: 185px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 43px 70px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 20px 25px 0 #ccc;
+    &-content {
+        max-width: 410px;
+    }
+    &-heading {
+        color: $heading-color;
+        font-size: 35px;
+        font-weight: 500;
+        line-height: 45px;
+        margin-bottom: 20px;
+    }
+}
+// begin responsive
+@media (min-width: 740px) and (max-width: 860px) {
+    .subscribe {
+        flex-direction: column;
+        &-heading {
+            text-align: center;
+        }
+        &-decs {
+            text-align: center;
+            margin: 20px 0;
+        }
+        &-button {
+            width: 275px;
+        }
+    }
+}
+// mobile
+@media (max-width: 739px) {
+    .subscribe {
+        flex-direction: column;
+        &-heading {
+            text-align: center;
+        }
+        &-decs {
+            text-align: center;
+            margin: 20px 0;
+        }
+        &-btn {
+            width: 275px;
+        }
+    }
+}
+// end responsive
+// end subscribe

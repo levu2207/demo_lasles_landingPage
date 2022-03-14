@@ -1,0 +1,53 @@
+// slider
+.slick-track {
+  display: flex;
+  justify-content: space-between;
+}
+.slick-dots {
+  display: flex!important;
+  align-items: center;
+  position: absolute;
+  left: 40px;
+  bottom: -100px;
+
+    button {
+      font-size: 0;
+      margin-right: 20px;
+      width: 15px;
+      height: 15px;
+      border-radius: 100%;
+      transition: all 0.2s linear;
+    }
+    .slick-active button {
+      background-color: $primary-color;
+      width: 45px;
+      height: 15px;
+      border-radius: 15px;
+    }
+}
+.slick-next {
+  position: absolute;
+  right: 20px;
+}
+.slick-prev {
+  position: absolute;
+  right: 100px;
+}
+.slick-arrow {
+  background-color: #fff;
+  bottom: -120px;
+}
+// begin responsive
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+// mobile
+@media (max-width: 739px) {
+  .slick-dots,
+  .slick-next,
+  .slick-arrow {
+    display: none!important;
+  }
+}
+// end responsive
+// end slider
