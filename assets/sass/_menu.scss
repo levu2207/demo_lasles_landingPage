@@ -61,6 +61,7 @@
     padding-top: 20px;
   }
   .menu {
+    display: none;
     position: fixed;
     right: 0;
     top: 0;
@@ -77,6 +78,7 @@
     will-change: transform;
     transition: all 0.2s linear;
     &.is-show {
+      display: block;
       transform: translateX(0);
     }
     &-item {
